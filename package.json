@@ -1,0 +1,48 @@
+{
+  "name": "sawa",
+  "version": "1.0.0",
+  "description": "online studying platform with meetings",
+  "homepage": "https://github.com/Yossab55/Sawa-backend#readme",
+  "bugs": {
+    "url": "https://github.com/Yossab55/Sawa-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yossab55/Sawa-backend.git"
+  },
+  "license": "ISC",
+  "author": "Yossab Samouel",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "node --env-file=.env --import tsx --watch source/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^26.6.5",
+    "@types/passport": "^1.0.17",
+    "@types/passport-google-oauth20": "^2.0.17",
+    "morgan": "^1.12.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.2",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.1.7",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "winston": "^3.19.0",
+    "zod": "^4.6.7"
+  }
+}
